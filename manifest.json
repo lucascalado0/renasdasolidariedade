@@ -6,17 +6,15 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "Renas da solidariedade",
-  "start_url": "/",
+  "start_url": "index.html",
   "theme_color": "#ffffff",
   "id": "Renas",
   "icons": [
-    {
-      "images": [
         {
           "size": "60x60",
           "expected-size": "180",
           "filename": "180.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "3x"
         },
@@ -24,7 +22,7 @@
           "size": "40x40",
           "expected-size": "80",
           "filename": "80.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "2x"
         },
@@ -32,7 +30,7 @@
           "size": "40x40",
           "expected-size": "120",
           "filename": "120.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "3x"
         },
@@ -40,7 +38,7 @@
           "size": "60x60",
           "expected-size": "120",
           "filename": "120.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "2x"
         },
@@ -48,7 +46,7 @@
           "size": "57x57",
           "expected-size": "57",
           "filename": "57.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "1x"
         },
@@ -56,7 +54,7 @@
           "size": "29x29",
           "expected-size": "58",
           "filename": "58.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "2x"
         },
@@ -64,7 +62,7 @@
           "size": "29x29",
           "expected-size": "29",
           "filename": "29.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "1x"
         },
@@ -72,7 +70,7 @@
           "size": "29x29",
           "expected-size": "87",
           "filename": "87.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "3x"
         },
@@ -80,7 +78,7 @@
           "size": "57x57",
           "expected-size": "114",
           "filename": "114.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "2x"
         },
@@ -88,7 +86,7 @@
           "size": "20x20",
           "expected-size": "40",
           "filename": "40.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "2x"
         },
@@ -96,7 +94,7 @@
           "size": "20x20",
           "expected-size": "60",
           "filename": "60.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "iphone",
           "scale": "3x"
         },
@@ -105,14 +103,14 @@
           "filename": "1024.png",
           "expected-size": "1024",
           "idiom": "ios-marketing",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "scale": "1x"
         },
         {
           "size": "40x40",
           "expected-size": "80",
           "filename": "80.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
@@ -120,7 +118,7 @@
           "size": "72x72",
           "expected-size": "72",
           "filename": "72.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "1x"
         },
@@ -128,7 +126,7 @@
           "size": "76x76",
           "expected-size": "152",
           "filename": "152.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
@@ -136,7 +134,7 @@
           "size": "50x50",
           "expected-size": "100",
           "filename": "100.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
@@ -144,7 +142,7 @@
           "size": "29x29",
           "expected-size": "58",
           "filename": "58.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
@@ -152,7 +150,7 @@
           "size": "76x76",
           "expected-size": "76",
           "filename": "76.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "1x"
         },
@@ -160,7 +158,7 @@
           "size": "29x29",
           "expected-size": "29",
           "filename": "29.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "1x"
         },
@@ -168,7 +166,7 @@
           "size": "50x50",
           "expected-size": "50",
           "filename": "50.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "1x"
         },
@@ -176,7 +174,7 @@
           "size": "72x72",
           "expected-size": "144",
           "filename": "144.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
@@ -184,7 +182,7 @@
           "size": "40x40",
           "expected-size": "40",
           "filename": "40.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "1x"
         },
@@ -192,7 +190,7 @@
           "size": "83.5x83.5",
           "expected-size": "167",
           "filename": "167.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
@@ -200,7 +198,7 @@
           "size": "20x20",
           "expected-size": "20",
           "filename": "20.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "1x"
         },
@@ -208,14 +206,14 @@
           "size": "20x20",
           "expected-size": "40",
           "filename": "40.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "ipad",
           "scale": "2x"
         },
         {
           "idiom": "watch",
           "filename": "172.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "38mm",
           "scale": "2x",
           "size": "86x86",
@@ -225,7 +223,7 @@
         {
           "idiom": "watch",
           "filename": "80.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "38mm",
           "scale": "2x",
           "size": "40x40",
@@ -235,7 +233,7 @@
         {
           "idiom": "watch",
           "filename": "88.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "40mm",
           "scale": "2x",
           "size": "44x44",
@@ -245,7 +243,7 @@
         {
           "idiom": "watch",
           "filename": "102.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "41mm",
           "scale": "2x",
           "size": "45x45",
@@ -255,7 +253,7 @@
         {
           "idiom": "watch",
           "filename": "92.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "41mm",
           "scale": "2x",
           "size": "46x46",
@@ -265,7 +263,7 @@
         {
           "idiom": "watch",
           "filename": "100.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "44mm",
           "scale": "2x",
           "size": "50x50",
@@ -275,7 +273,7 @@
         {
           "idiom": "watch",
           "filename": "196.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "42mm",
           "scale": "2x",
           "size": "98x98",
@@ -285,7 +283,7 @@
         {
           "idiom": "watch",
           "filename": "216.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "44mm",
           "scale": "2x",
           "size": "108x108",
@@ -295,7 +293,7 @@
         {
           "idiom": "watch",
           "filename": "48.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "38mm",
           "scale": "2x",
           "size": "24x24",
@@ -305,7 +303,7 @@
         {
           "idiom": "watch",
           "filename": "55.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "42mm",
           "scale": "2x",
           "size": "27.5x27.5",
@@ -315,7 +313,7 @@
         {
           "idiom": "watch",
           "filename": "66.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "subtype": "45mm",
           "scale": "2x",
           "size": "33x33",
@@ -326,7 +324,7 @@
           "size": "29x29",
           "expected-size": "87",
           "filename": "87.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "watch",
           "role": "companionSettings",
           "scale": "3x"
@@ -335,7 +333,7 @@
           "size": "29x29",
           "expected-size": "58",
           "filename": "58.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "watch",
           "role": "companionSettings",
           "scale": "2x"
@@ -344,7 +342,7 @@
           "size": "1024x1024",
           "expected-size": "1024",
           "filename": "1024.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "watch-marketing",
           "scale": "1x"
         },
@@ -352,7 +350,7 @@
           "size": "128x128",
           "expected-size": "128",
           "filename": "128.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "1x"
         },
@@ -360,7 +358,7 @@
           "size": "256x256",
           "expected-size": "256",
           "filename": "256.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "1x"
         },
@@ -368,7 +366,7 @@
           "size": "128x128",
           "expected-size": "256",
           "filename": "256.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "2x"
         },
@@ -376,7 +374,7 @@
           "size": "256x256",
           "expected-size": "512",
           "filename": "512.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "2x"
         },
@@ -384,7 +382,7 @@
           "size": "32x32",
           "expected-size": "32",
           "filename": "32.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "1x"
         },
@@ -392,7 +390,7 @@
           "size": "512x512",
           "expected-size": "512",
           "filename": "512.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "1x"
         },
@@ -400,7 +398,7 @@
           "size": "16x16",
           "expected-size": "16",
           "filename": "16.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "1x"
         },
@@ -408,7 +406,7 @@
           "size": "16x16",
           "expected-size": "32",
           "filename": "32.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "2x"
         },
@@ -416,7 +414,7 @@
           "size": "32x32",
           "expected-size": "64",
           "filename": "64.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "2x"
         },
@@ -424,11 +422,9 @@
           "size": "512x512",
           "expected-size": "1024",
           "filename": "1024.png",
-          "folder": "Assets.xcassets/AppIcon.appiconset/",
+          "src": "images/AppIcons/Assets.xcassets/AppIcon.appiconset/",
           "idiom": "mac",
           "scale": "2x"
         }
       ]
     }
-  ]
-}
