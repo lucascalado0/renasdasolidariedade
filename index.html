@@ -283,11 +283,6 @@
 	<script src="service-worker.js"></script>
 	<script>
 		let newWorker;
-		function showUpdateBar() {
-			let snackbar = document.getElementById('snackbar');
-			snackbar.className = 'show';
-		}
-
 		document.getElementById('reload').addEventListener('click', function () {
 			newWorker.postMessage({ action: 'skipWaiting' });
 		});
@@ -295,15 +290,6 @@
 			navigator.serviceWorker.register('./service-worker.js').then(reg => {
 				reg.addEventListener('updatefound', () => {
 					newWorker = reg.installing;
-					newWorker.addEventListener('statechange', () => {
-						switch (newWorker.state) {
-							case 'installed':
-								if (navigator.serviceWorker.controller) {
-									showUpdateBar();
-								}
-								break;
-						}
-					});
 				});
 			});
 		}
