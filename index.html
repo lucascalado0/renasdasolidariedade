@@ -9,7 +9,7 @@
 <head>
 	<title>Renas da Solidariedade</title>
 	<meta charset="utf-8" />
-	<meta name="theme-color" content="#4D5360" />
+	<meta name="theme-color" content="#4D5360"   />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
@@ -46,10 +46,13 @@
 				<li><a href="generic.html">Quem somos</a></li>
 			</ul>
 			<ul class="icons">
-                <li><a href="https://x.com/senacpe" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/senacpe/?locale=pt_BR" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/senacpe/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-            </ul>
+				<li><a href="https://x.com/senacpe" class="icon brands fa-twitter" target="_blank"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="https://www.facebook.com/senacpe/?locale=pt_BR" class="icon brands fa-facebook-f"
+						target="_blank"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.instagram.com/senacpe/" class="icon brands fa-instagram" target="_blank"><span
+							class="label">Instagram</span></a></li>
+			</ul>
 		</nav>
 
 		<!-- Main -->
@@ -230,7 +233,7 @@
 					<h3>Endereço</h3>
 					<p><a href="https://m.uber.com/ul/?action=setPickup&client_id=https%3A%2F%2Fdeveloper.uber.com&pickup=my_location&dropoff[formatted_address]=Rua%20do%20Pombal%2C%2057%20-%20Santo%20Amaro%2C%20Recife%20-%20PE%2C%20Brasil&dropoff[latitude]=-8.052824&dropoff[longitude]=-34.885112
 						">Rua do Pombal, 57 <br />
-						Recife - PE<br /> CEP - 50100-170</a></p>
+							Recife - PE<br /> CEP - 50100-170</a></p>
 					<br>
 					<br>
 				</section>
@@ -251,10 +254,14 @@
 				<section>
 					<h3>Social</h3>
 					<ul class="icons alt">
-						<li><a href="https://x.com/senacpe" class="icon brands alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/senacpe/?locale=pt_BR" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a>
+						<li><a href="https://x.com/senacpe" class="icon brands alt fa-twitter" target="_blank"><span
+									class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/senacpe/?locale=pt_BR"
+								class="icon brands alt fa-facebook-f" target="_blank"><span
+									class="label">Facebook</span></a>
 						</li>
-						<li><a href="https://www.instagram.com/senacpe/" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a>
+						<li><a href="https://www.instagram.com/senacpe/" class="icon brands alt fa-instagram"
+								target="_blank"><span class="label">Instagram</span></a>
 						</li>
 					</ul>
 				</section>
@@ -275,22 +282,22 @@
 	<script src="service-worker.js"></script>
 	<script>
 		let newWorker;
-		function showUpdateBar(){
+		function showUpdateBar() {
 			let snackbar = document.getElementById('snackbar');
 			snackbar.className = 'show';
 		}
 
-		document.getElementById('reload').addEventListener('click', function(){
-			newWorker.postMessage({action: 'skipWaiting'});
+		document.getElementById('reload').addEventListener('click', function () {
+			newWorker.postMessage({ action: 'skipWaiting' });
 		});
-		if('serviceWorker' in navigator){
-			navigator.serviceWorker.register('/service-worker.js').then(reg => {
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./service-worker.js').then(reg => {
 				reg.addEventListener('updatefound', () => {
 					newWorker = reg.installing;
 					newWorker.addEventListener('statechange', () => {
-						switch (newWorker.state){
-							case 'installed': 
-								if(navigator.serviceWorker.controller) {
+						switch (newWorker.state) {
+							case 'installed':
+								if (navigator.serviceWorker.controller) {
 									showUpdateBar();
 								}
 								break;
@@ -300,6 +307,12 @@
 			});
 		}
 		let refreshing;
+		navigator.serviceWorker.addEventListener('controllerchange', function(){
+			if(refreshing) return;
+			window.location.reload();
+			refreshing = true;
+		});
+	
 	</script>
 
 </body>
