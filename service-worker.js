@@ -8,9 +8,11 @@ self.addEventListener('install', event => {
                     './index.html',
                     './page2.html',
                     './generic.html',
+
                     './assets/css/main.css',
                     './assets/css/noscript.css',
                     './assets/css/fontaawesome-all.min.css',
+
                     './assets/js/breakpoint.min.js',
                     './assets/js/browser.min.js',
                     './assets/js/jquery.min.js',
@@ -18,6 +20,60 @@ self.addEventListener('install', event => {
                     './assets/js/jquery.scrolly.min.js',
                     './assets/js/main.js',
                     './assets/js/util.js',
+
+                    '.assets/sass/base/_page.scss',
+                    '.assets/sass/base/_reset.scss',
+                    '.assets/sass/base/_typography.scss',
+
+                    '.assets/sass/components/_actions.scss',
+                    '.assets/sass/components/_box.scss',
+                    '.assets/sass/components/_button.scss',
+                    '.assets/sass/components/_form.scss',
+                    '.assets/sass/components/_icon.scss',
+                    '.assets/sass/components/_icons.scss',
+                    '.assets/sass/components/_image.scss',
+                    '.assets/sass/components/_list.scss',
+                    '.assets/sass/components/pagination.scss',
+                    '.assets/sass/components/_row.scss',
+                    '.assets/sass/components/_section.scss',
+                    '.assets/sass/components/_table.scss',
+
+                    '.assets/sass/layout/_footer.scss',
+                    '.assets/sass/layout/_header.scss',
+                    '.assets/sass/layout/_intro.scss',
+                    '.assets/sass/layout/_main.scss',
+                    '.assets/sass/layout/_nav.scss',
+                    '.assets/sass/layout/_navPanel.scss',
+                    '.assets/sass/layout/_wrapper.scss',
+
+                    '.assets/sass/libs/_breakpoints.scss',
+                    '.assets/sass/libs/_fixed-grid.scss',
+                    '.assets/sass/libs/_functions.scss',
+                    '.assets/sass/libs/_mixins.scss',
+                    '.assets/sass/libs/_vars.scss',
+                    '.assets/sass/libs/_vendor.scss',
+                    
+                    '.assets/sass/main.scss',
+                    '.assets/sass/noscript.scss',
+
+                    '.assets/webfonts/fa-brands-400.eot',
+                    '.assets/webfonts/fa-brands-400.ttf',
+                    '.assets/webfonts/fa-brands-400.woff',
+                    '.assets/webfonts/fa-brands-400.woff2',
+                    '.assets/webfonts/fa-regular-400.eot',
+                    '.assets/webfonts/fa-regular-400.svg',
+                    '.assets/webfonts/fa-regular-400.ttf',
+                    '.assets/webfonts/fa-regular-400.woff',
+                    '.assets/webfonts/fa-regular-400.woff2',
+                    '.assets/webfonts/fa-solid-900.eot',
+                    '.assets/webfonts/fa-solid-900.svg',
+                    '.assets/webfonts/fa-solid-900.ttf',
+                    '.assets/webfonts/fa-solid-900.woff',
+                    '.assets/webfonts/fa-solid-900.woff2',
+                    '.assets/webfonts/',
+
+
+
                     './images/bg.jpg',
                     './images/rena1.jpg',
                     './images/cartaAna.jpeg',
@@ -51,7 +107,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request).then(response => {
-            
+
             if (response) {
                 return response;
             }
