@@ -1,129 +1,62 @@
-var cacheName = 'RenasDaSolidariedade'
+var cacheName = 'RenasDaSolidariedade-v1';
 
-self.addEventListener('install', event => {
+self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open(cacheName)
-            .then(cache => {
-                return cache.addAll([
-                    './index.html',
-                    './page2.html',
-                    './generic.html',
-
-                    './assets/css/main.css',
-                    './assets/css/noscript.css',
-                    './assets/css/fontaawesome-all.min.css',
-
-                    './assets/js/breakpoint.min.js',
-                    './assets/js/browser.min.js',
-                    './assets/js/jquery.min.js',
-                    './assets/js/jquery.scrollex.min.js',
-                    './assets/js/jquery.scrolly.min.js',
-                    './assets/js/main.js',
-                    './assets/js/util.js',
-
-                    '.assets/sass/base/_page.scss',
-                    '.assets/sass/base/_reset.scss',
-                    '.assets/sass/base/_typography.scss',
-
-                    '.assets/sass/components/_actions.scss',
-                    '.assets/sass/components/_box.scss',
-                    '.assets/sass/components/_button.scss',
-                    '.assets/sass/components/_form.scss',
-                    '.assets/sass/components/_icon.scss',
-                    '.assets/sass/components/_icons.scss',
-                    '.assets/sass/components/_image.scss',
-                    '.assets/sass/components/_list.scss',
-                    '.assets/sass/components/pagination.scss',
-                    '.assets/sass/components/_row.scss',
-                    '.assets/sass/components/_section.scss',
-                    '.assets/sass/components/_table.scss',
-
-                    '.assets/sass/layout/_footer.scss',
-                    '.assets/sass/layout/_header.scss',
-                    '.assets/sass/layout/_intro.scss',
-                    '.assets/sass/layout/_main.scss',
-                    '.assets/sass/layout/_nav.scss',
-                    '.assets/sass/layout/_navPanel.scss',
-                    '.assets/sass/layout/_wrapper.scss',
-
-                    '.assets/sass/libs/_breakpoints.scss',
-                    '.assets/sass/libs/_fixed-grid.scss',
-                    '.assets/sass/libs/_functions.scss',
-                    '.assets/sass/libs/_mixins.scss',
-                    '.assets/sass/libs/_vars.scss',
-                    '.assets/sass/libs/_vendor.scss',
-                    
-                    '.assets/sass/main.scss',
-                    '.assets/sass/noscript.scss',
-
-                    '.assets/webfonts/fa-brands-400.eot',
-                    '.assets/webfonts/fa-brands-400.ttf',
-                    '.assets/webfonts/fa-brands-400.woff',
-                    '.assets/webfonts/fa-brands-400.woff2',
-                    '.assets/webfonts/fa-regular-400.eot',
-                    '.assets/webfonts/fa-regular-400.svg',
-                    '.assets/webfonts/fa-regular-400.ttf',
-                    '.assets/webfonts/fa-regular-400.woff',
-                    '.assets/webfonts/fa-regular-400.woff2',
-                    '.assets/webfonts/fa-solid-900.eot',
-                    '.assets/webfonts/fa-solid-900.svg',
-                    '.assets/webfonts/fa-solid-900.ttf',
-                    '.assets/webfonts/fa-solid-900.woff',
-                    '.assets/webfonts/fa-solid-900.woff2',
-                    '.assets/webfonts/',
-
-
-
-                    './images/bg.jpg',
-                    './images/rena1.jpg',
-                    './images/cartaAna.jpeg',
-                    './images/cartaJoaoLucas.jpg',
-                    './images/cartinhaAnaBeatriz.jpg',
-                    './images/cartinhaAnaJulya.jpg',
-                    './images/cartinhaArmando.jpg',
-                    './images/cartinhaArthur.png',
-                    './images/cartinhaBrenda.jpg',
-                    './images/cartinhaHelena.jpg',
-                    './images/cartinhaLuisa.jpg',
-                    './images/cartinhaPatricia.jpg',
-                    './images/cartinhaRobson.jpg',
-                    './images/cartinhaThayla.jpg',
-                ]);
-            })
-    );
-});
-
-self.addEventListener('activate', event => {
-    event.waitUntil(
-        caches.keys().then(cacheNames => {
-            return Promise.all(
-                cacheNames.filter(cache => cache !== cacheName)
-                    .map(cache => caches.delete(cache))
-            );
+        caches.open(cacheName).then(function(cache) {
+            return cache.addAll([
+                './index.html',
+                './page2.html',
+                './generic.html',
+                './assets/css/main.css',
+                './assets/css/noscript.css',
+                './assets/css/fontaawesome-all.min.css',
+                './assets/js/breakpoint.min.js',
+                './assets/js/browser.min.js',
+                './assets/js/jquery.min.js',
+                './assets/js/jquery.scrollex.min.js',
+                './assets/js/jquery.scrolly.min.js',
+                './assets/js/main.js',
+                './assets/js/util.js',
+                './images/bg.jpg',
+                './images/rena1.jpg',
+                './images/cartaAna.jpeg',
+                './images/cartaJoaoLucas.jpg',
+                './images/cartinhaAnaBeatriz.jpg',
+                './images/cartinhaAnaJulya.jpg',
+                './images/cartinhaArmando.jpg',
+                './images/cartinhaArthur.png',
+                './images/cartinhaBrenda.jpg',
+                './images/cartinhaHelena.jpg',
+                './images/cartinhaLuisa.jpg',
+                './images/cartinhaPatricia.jpg',
+                './images/cartinhaRobson.jpg',
+                './images/cartinhaThayla.jpg',
+            ]);
         })
     );
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', function(event) {
     event.respondWith(
-        caches.match(event.request).then(response => {
-
+        caches.match(event.request).then(function(response) {
+            // Cache hit - return response
             if (response) {
                 return response;
             }
 
+            // Clone the request to make a network request
+            var fetchRequest = event.request.clone();
 
-            let fetchRequest = event.request.clone();
-
-            return fetch(fetchRequest).then(response => {
-
-                if (!response || response.status !== 200 || response.type !== 'basic') {
+            return fetch(fetchRequest).then(function(response) {
+                // Check if we received a valid response
+                if(!response || response.status !== 200 || response.type !== 'basic') {
                     return response;
                 }
 
-                let responseToCache = response.clone();
+                // Clone the response to cache it
+                var responseToCache = response.clone();
 
-                caches.open(cacheName).then(cache => {
+                caches.open(cacheName).then(function(cache) {
                     cache.put(event.request, responseToCache);
                 });
 
@@ -133,7 +66,21 @@ self.addEventListener('fetch', event => {
     );
 });
 
-self.addEventListener('message', event => {
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.filter(function(cache) {
+                    return cache !== cacheName;
+                }).map(function(cache) {
+                    return caches.delete(cache);
+                })
+            );
+        })
+    );
+});
+
+self.addEventListener('message', function(event) {
     if (event.data.action === 'skipWaiting') {
         self.skipWaiting();
     }
