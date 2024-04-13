@@ -6,15 +6,15 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(cacheName)
             .then(cache => cache.addAll([
-                './index.html',
-                './page2.html',
-                './generic.html',
+                'index.html',
+                'page2.html',
+                'generic.html',
 
                 './assets/css/main.css',
                 './assets/css/noscript.css',
-                './assets/css/fontaawesome-all.min.css',
+                './assets/css/fontawesome-all.min.css',
 
-                './assets/js/breakpoint.min.js',
+                './assets/js/breakpoints.min.js',
                 './assets/js/browser.min.js',
                 './assets/js/jquery.min.js',
                 './assets/js/jquery.scrollex.min.js',
@@ -28,13 +28,13 @@ self.addEventListener('install', event => {
 
                 './assets/sass/components/_actions.scss',
                 './assets/sass/components/_box.scss',
-                 './assets/sass/components/_button.scss',
+                './assets/sass/components/_button.scss',
                 './assets/sass/components/_form.scss',
                 './assets/sass/components/_icon.scss',
                 './assets/sass/components/_icons.scss',
                 './assets/sass/components/_image.scss',
                 './assets/sass/components/_list.scss',
-                './assets/sass/components/pagination.scss',
+                './assets/sass/components/_pagination.scss',
                 './assets/sass/components/_row.scss',
                 './assets/sass/components/_section.scss',
                 './assets/sass/components/_table.scss',
@@ -58,6 +58,7 @@ self.addEventListener('install', event => {
                 './assets/sass/noscript.scss',
 
                 './assets/webfonts/fa-brands-400.eot',
+                './assets/webfonts/fa-brands-400.svg',
                 './assets/webfonts/fa-brands-400.ttf',
                 './assets/webfonts/fa-brands-400.woff',
                 './assets/webfonts/fa-brands-400.woff2',
