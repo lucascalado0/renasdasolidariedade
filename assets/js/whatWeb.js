@@ -19,4 +19,4 @@ if ('geolocation' in navigator) {
   });
 } else {
   target.innerText = 'Geolocation API not supported.';
- }
+ } //fornecer localização
