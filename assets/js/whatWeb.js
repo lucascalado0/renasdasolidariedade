@@ -5,9 +5,7 @@ var watchId;
 
 function appendLocation(location, verb) {
   verb = verb || 'updated';
-  var newLocation = document.createElement('p');
-  newLocation.innerHTML = 'Location ' + verb + ': ' + location.coords.latitude + ', ' + location.coords.longitude + '';
-  target.appendChild(newLocation);
+  console.log('Location ' + verb + ': ' + location.coords.latitude + ', ' + location.coords.longitude);
 }
 
 if ('geolocation' in navigator) {
@@ -19,4 +17,4 @@ if ('geolocation' in navigator) {
   });
 } else {
   target.innerText = 'Geolocation API not supported.';
- } //fornecer localização
+}
