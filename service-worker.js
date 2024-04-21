@@ -24,6 +24,7 @@ self.addEventListener('install', event => {
                 './assets/js/util.js',
                 './assets/js/whatWeb.js',
                 './assets/js/consultaCep.js',
+                './assets/js/formulario.js',
 
                 './assets/sass/base/_page.scss',
                 './assets/sass/base/_reset.scss',

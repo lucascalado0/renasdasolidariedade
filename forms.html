@@ -61,29 +61,29 @@
 		<!-- Main -->
 		<div id="main">
 
-			<form method="get" action=".">
+			<form method="POST" action="https://formsubmit.co/lucas.calado@edu.pe.senac.br" data-form>
 				<label>Nome Completo:
-					<input name="nome" type="text" id="nome" value="" size="10" maxlength="9"
-						placeholder="Nome Completo" /></label><br />
+					<input name="nome" type="text" id="nome" value="" size="10"
+						placeholder="Nome Completo" required/></label><br />
 				<label>Email:
-					<input name="rua" type="email" id="email" size="60" placeholder="EMAIL" /></label><br />
+					<input name="email" type="email" id="email" size="60" placeholder="EMAIL" required/></label><br />
 				<label>Whatsapp:
 					<input name="bairro" type="text" id="whatsapp" size="40"
-						placeholder="NÚMERO DE TELEFONE" /></label><br />
+						placeholder="NÚMERO DE TELEFONE" required/></label><br />
 				<label>Cep:
 					<input name="cep" type="text" id="cep" value="" size="10" maxlength="9" placeholder="CEP"
-						onblur="pesquisacep(this.value);" /></label><br />
+						onblur="pesquisacep(this.value);" required/></label><br />
 				<label>Rua:
-					<input name="rua" type="text" id="rua" size="60" placeholder="RUA" /></label><br />
+					<input name="rua" type="text" id="rua" size="60" placeholder="RUA" required/></label><br />
 				<label>Complemento:
-					<input name="rua" type="text" id="complemento" size="60" placeholder="Bloco, Andar" /></label><br />
+					<input name="complemento" type="text" id="complemento" size="60" placeholder="Bloco, Andar" /></label><br />
 				<label>Bairro:
-					<input name="bairro" type="text" id="bairro" size="40" placeholder="BAIRRO" /></label><br />
+					<input name="bairro" type="text" id="bairro" size="40" placeholder="BAIRRO" required/></label><br />
 				<label>Cidade:
-					<input name="cidade" type="text" id="cidade" size="40" placeholder="CIDADE" /></label><br />
+					<input name="cidade" type="text" id="cidade" size="40" placeholder="CIDADE" required/></label><br />
 				<label>Estado:
-					<input name="uf" type="text" id="uf" size="2" placeholder="ESTADO" /></label><br />
-				<input type="submit" value="Enviar formulário de adoção">
+					<input name="uf" type="text" id="uf" size="2" placeholder="ESTADO" required/></label><br />
+				<input type="submit" value="Enviar formulário de adoção" data-button>
 			</form>
 		</div>
 
@@ -162,8 +162,8 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/whatWeb.js"></script>
 	<script src="assets/js/consultaCep.js"></script>
+	<script src="assets/js/formulario.js"></script>
 	<script src="service-worker.js"></script>
 
 
