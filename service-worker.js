@@ -9,6 +9,7 @@ self.addEventListener('install', event => {
                 'index.html',
                 'page2.html',
                 'generic.html',
+                'forms.html',
 
                 './assets/css/main.css',
                 './assets/css/noscript.css',
@@ -21,6 +22,8 @@ self.addEventListener('install', event => {
                 './assets/js/jquery.scrolly.min.js',
                 './assets/js/main.js',
                 './assets/js/util.js',
+                './assets/js/whatWeb.js',
+                './assets/js/consultaCep.js',
 
                 './assets/sass/base/_page.scss',
                 './assets/sass/base/_reset.scss',
